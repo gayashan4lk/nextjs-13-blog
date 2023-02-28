@@ -1,3 +1,5 @@
+import ManuItem from '@/components/menu-item/MenuItem';
+
 export default function BlogLayout({
 	children,
 }: {
@@ -14,30 +16,17 @@ export default function BlogLayout({
 				<div className='sm:grid sm:grid-cols-5 sm:gap-4'>
 					<nav className='w-full sm:h-screen sm:col-span-1 bg-stone-200 '>
 						<div className='text-center sm:text-left text-stone-800 divide-y-[0.1rem] divide-stone-300'>
-							<div className='sm:px-8 hover:bg-stone-300'>
-								<h3 className='py-2 hover:cursor-pointer font-semibold'>
-									ASP.NET Core
-								</h3>
-							</div>
-							<div className='sm:px-8 hover:bg-stone-300'>
-								<h3 className='py-2 hover:cursor-pointer font-semibold'>
-									ASP.NET Core
-								</h3>
-							</div>
-							<div className='sm:px-8 hover:bg-stone-300'>
-								<h3 className='py-2 hover:cursor-pointer font-semibold'>
-									ASP.NET Core
-								</h3>
-							</div>
-							<h3 className='py-2'>.NET</h3>
-							<h3 className='py-2'>C#</h3>
-							<h3 className='py-2'>JavaScript</h3>
-							<h3 className='py-2'>React.JS</h3>
-							<h3 className='py-2'>Next.JS</h3>
-							<h3 className='py-2'>Blockchain</h3>
+							<ManuItem menuItem='C#' />
+							<ManuItem menuItem='.NET' />
+							<ManuItem menuItem='ASP.NET Core' />
+							<ManuItem menuItem='JavaScript' />
+							<ManuItem menuItem='Next.JS' />
+							<ManuItem menuItem='Blockchain' />
 						</div>
 					</nav>
-					<main className='w-full sm:col-span-4'>{children}</main>
+					<main className='w-full sm:col-span-4'>
+						<div>{children}</div>
+					</main>
 				</div>
 				<footer className='bg-stone-300 text-center'>
 					<span className='font-sans font-semibold'> All rights reserved</span>
