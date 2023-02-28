@@ -14,7 +14,7 @@ export default function BlogLayout({
 					</h1>
 				</header>
 				<div className='sm:grid sm:grid-cols-5 sm:gap-4'>
-					<nav className='w-full sm:h-screen sm:col-span-1 bg-stone-200 '>
+					<nav className='w-full sm:fit sm:col-span-1 bg-stone-200 '>
 						<div className='text-center sm:text-left text-stone-800 divide-y-[0.1rem] divide-stone-300'>
 							<ManuItem menuItem='C#' />
 							<ManuItem menuItem='.NET' />
@@ -28,9 +28,6 @@ export default function BlogLayout({
 						<div>{children}</div>
 					</main>
 				</div>
-				<footer className='bg-stone-300 text-center'>
-					<span className='font-sans font-semibold'> All rights reserved</span>
-				</footer>
 			</div>
 		</>
 	);
